@@ -33,4 +33,4 @@ def test_maxArea():
         actual = temp.maxArea(h=input['h'], w=input['w'], horizontalCuts=input['horizontalCuts'], verticalCuts=input['verticalCuts'])
         expected = input['expected']
 
-        assert actual == expected
+        assert actual == expected, f"h: {input['h']}, w: {input['w']}, horizontalCuts: {input['horizontalCuts']}, verticalCuts: {input['verticalCuts']}\nExpected: {input['expected']}, Actual: {actual}"
